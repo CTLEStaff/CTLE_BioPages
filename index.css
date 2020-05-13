@@ -1,45 +1,182 @@
+/*
+////Colors////
+Dark Grey:  #636466 50%   25%
+Gold:       #B6A269 75%   50%
+Blue:       #007396 75%   50%
+Purple:     #642667 75%   50%
+Red:        #862633 75%
+Yellow:     #F1C400 75%   50%
+Orange:     #D45D00 75%   50%
+Green:      #84BD00 75%   50% 
+
+////FONTS////
+//Franklin Gothic URW
+//HTML: <link rel="stylesheet" href="https://use.typekit.net/jrl4ewy.css">
+//CSS: font-family: franklin-gothic-urw, sans-serif;
+//Types: Light, Book, Book Italic, Medium, Medium Italic, Demi, Demi Italic, Heavy, Heavy Italic
+
+//ITC New Baskerville
+//HTML: <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+//CSS: font-family: 'Libre Baskerville', serif;
+//Types: Roman, Italic, Semibold, Semibold Italic, Bold, Bold Italic
+*/
+
+/*
+////elements////
+h1
+h2
+h3
+header
+main
+body
+section
+img
+div
+p
+button
+////ids////
+#section-one
+#section-two
+#section-three
+#section-four
+////classes////
+.bio-section
+.bio-text
+
 /*Use On All Projects*/
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
   
-body {
-    /*find fonts as needed*/
-    font-family: 'Roboto', sans-serif;
+body, button {
+  font-family: 'Libre Baskerville', serif;
+  margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 15;
+}
+
+h1 {
+  margin: auto;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 22px;
 }
   
 button:hover {
    cursor: pointer;
 }
 
-/*FOR API*/
-button, input[type="text"] {
-    padding: 5px;
-  }
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0;
+  height: 100px;
+  border-bottom: 2px solid #B6A269;
+  padding-top: 50px;
+}
 
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+.title-header {
+  vertical-align: middle;
+}
+
+section {
+  background-color: lightcyan;
+  padding: 20px;
+}
+
+#section-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+
+img {
+  height: 256px;
+  width: 256px;
+  align-self: center;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.bio-text h2 {
+  margin-bottom: 5px;
+}
+
+.bio-text h3 {
+  margin-top: 5px;
+  border-bottom: 1px solid black;
+}
+
+.bio-text p {
+  margin-top: 3px;
+  margin-bottom: 25px;
+}
+
+.bio-text {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  height: 50px;
+  width: 150px;
+  padding: 3px;
+  border-radius: 10px;
+  box-shadow: 3px 3px darkgrey;
+  align-self: center;
+  font-size: 18px;
+}
+
+
+/*
+
+button, input[type="text"] {
+  padding: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
   
-  li {
-    padding: 10px;
-  }
+li {
+  padding: 10px;
+}
   
-  li, img {
-    max-width: 500px;
-  }
+li, img {
+  max-width: 500px;
+}
   
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
-  }
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
   
-  .error-message {
-      color: red;
-  }
+.error-message {
+    color: red;
+}
   
-  .hidden {
-    display: none;
-  }
+.hidden {
+  display: none;
+}
+
+*/
