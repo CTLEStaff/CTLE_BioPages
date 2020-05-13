@@ -48,6 +48,23 @@ button
   box-sizing: border-box;
 }
   
+main {
+  background-color: #B6A269;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1440px;
+  justify-self: center;
+  margin: auto;
+  background-color: white;
+}
+
 body, button {
   font-family: 'Libre Baskerville', serif;
   margin: 0px;
@@ -63,7 +80,7 @@ h1 {
   width: 100%;
   text-align: left;
   padding: 10px;
-  font-size: 42px;
+  font-size: 32px;
 }
 
 
@@ -206,5 +223,12 @@ button {
 
   .bio-pic, .bio-text {
     margin: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    border-left: 4px solid black;
+    border-right: 4px solid black;
   }
 }
