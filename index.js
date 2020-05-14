@@ -14,7 +14,7 @@
 
 const STORE = [
   {name: 'shannon', bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', test: '“Shannon is dedicated to teaching, learning, assessment and best practices in student learning.  She will be an asset to all that we do here at our college and the Center.  Her positive attitude and caring personality allow her to gain the trust of others and enable her to build community among faculty.” – Faculty colleague'},
-  {name: 'chris', bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', test: '“Chris has implemented innovative teaching practices, including hands on skill training as well as virtual and distance learning. Chris is highly competent, insightful, and can be counted on to complete tasks with enthusiasm and positivity.” – Faculty colleague'},
+  {name: 'chris', bio: 'Chris has dedicated his life as a public servant for 28 years.  He has served as a police officer, firefighter, and paramedic.  He came to CPCC in spring 2014 as faculty in the Emergency Medical Sciences Program and was then assigned the Program Chair role six months later.  He has an Associates Degree in EMS from Lenoir CC, a BS Degree in Emergency Management and a Masters Degree in Health Sciences from WCU.  He will begin his Educational Doctorate Degree in Educational Leadership next year also at WCU.  He has been married for 26 years to Jodi and has two sons, Devin and Brenton.​', test: '“Chris has implemented innovative teaching practices, including hands on skill training as well as virtual and distance learning. Chris is highly competent, insightful, and can be counted on to complete tasks with enthusiasm and positivity.” – Faculty colleague'},
   {name: 'lindy', bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', test: '“Lindy is very knowledgeable about the culture of CPCC and its students and is able to adapt and communicate effectively in that realm. Aside from her excellent instructional expertise, she can identify, connect with and foster relationships that make her a valuable asset to any team.” – Faculty colleague'},
   {name: 'jennifer', bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', test: '“Jennifer is cordial, intelligent, understanding, and cares deeply about her students and the college. Her students respond to her positively, and she truly creates an atmosphere that fosters learning and bonding. She is dedicated to Central Piedmont and to her faculty colleagues and is a collaborative team member with all areas of the college.” – Faculty colleague'},
 ];
@@ -38,16 +38,16 @@ function switchHTML(data, currentState, sectionNumber) {
     $(`#section-${sectionNumber}-p`).text(STORE[c].test);
     //change button text to say biography
     $(`#js-section-${sectionNumber}-button`).text('Biography');
-    //$(`#js-section-${sectionNumber}-button`).css({"background-color":"white", "color":"black"});
-    animateButton(`#js-section-${sectionNumber}-button`);
+    $(`#js-section-${sectionNumber}-button`).css({"background-color":"white", "color":"black"});
+    //animateButton(`#js-section-${sectionNumber}-button`);
     
   } else {
     //change section's testimonial text to bio text
     $(`#section-${sectionNumber}-p`).text(STORE[c].bio);
     //change button text to say testimonial
     $(`#js-section-${sectionNumber}-button`).text('Testimonial');
-    //$(`#js-section-${sectionNumber}-button`).css({"background-color":"#862633", "color":"white"});
-    animateButton(`#js-section-${sectionNumber}-button`);
+    $(`#js-section-${sectionNumber}-button`).css({"background-color":"#862633", "color":"white"});
+    //animateButton(`#js-section-${sectionNumber}-button`);
   }
 }
 

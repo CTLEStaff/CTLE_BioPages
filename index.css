@@ -133,7 +133,7 @@ section {
 
 #section-one button, #section-three button {
   background-color: white;
-  color: black;
+  color: black        ;
 }
 
 #section-one, #section-three {
