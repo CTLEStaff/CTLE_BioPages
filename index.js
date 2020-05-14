@@ -19,6 +19,8 @@ const STORE = [
   {name: 'jennifer', bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', test: '“Jennifer is cordial, intelligent, understanding, and cares deeply about her students and the college. Her students respond to her positively, and she truly creates an atmosphere that fosters learning and bonding. She is dedicated to Central Piedmont and to her faculty colleagues and is a collaborative team member with all areas of the college.” – Faculty colleague'},
 ];
 
+let state = true;
+
 
 function switchHTML(data, currentState, sectionNumber) {
   console.log(`${data}: ${currentState}`);
@@ -36,13 +38,33 @@ function switchHTML(data, currentState, sectionNumber) {
     $(`#section-${sectionNumber}-p`).text(STORE[c].test);
     //change button text to say biography
     $(`#js-section-${sectionNumber}-button`).text('Biography');
+    //$(`#js-section-${sectionNumber}-button`).css({"background-color":"white", "color":"black"});
+    animateButton(`#js-section-${sectionNumber}-button`);
+    
   } else {
     //change section's testimonial text to bio text
     $(`#section-${sectionNumber}-p`).text(STORE[c].bio);
     //change button text to say testimonial
     $(`#js-section-${sectionNumber}-button`).text('Testimonial');
+    //$(`#js-section-${sectionNumber}-button`).css({"background-color":"#862633", "color":"white"});
+    animateButton(`#js-section-${sectionNumber}-button`);
   }
 }
+
+function animateColor(button) {
+  if (state) {
+    $(button).animate({
+      backgroundColor: "white",
+      color: "black",
+    }, 1000 );
+  } else {
+    $(button).animate({
+      backgroundColor: "black",
+      color: "white",
+    }, 1000 );
+  }
+  state = !state;
+};
 
 //watch for the form submission
 function watchButton() {

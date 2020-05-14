@@ -132,8 +132,8 @@ section {
 }
 
 #section-one button, #section-three button {
-  background-color: #862633;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 #section-one, #section-three {
