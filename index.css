@@ -232,6 +232,17 @@ button {
   .bio-pic, .bio-text {
     margin: 20px;
   }
+
+  #js-section-one-button, #js-section-three-button {
+    position: relative;
+    top: 0%;
+  }
+
+  #js-section-two-button, #js-section-four-button {
+    position: relative;
+    top: 0%;
+    left: 20%;
+  }
 }
 
 @media screen and (min-width: 1440px) {
